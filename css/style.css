@@ -71,3 +71,83 @@ body{
     border: 1px solid #ccc;
     border-radius: 8px;
 }
+
+.navbar .logo{
+    background: linear-gradient(95deg, #7e22ce 3.2%, #3b82f6 99.5%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.navbar .item{
+    font-size: 13px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.navbar .item.selected{
+    background: linear-gradient(95deg, #7e22ce 3.2%, #3b82f6 99.5%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1px solid #7e22ce;
+}
+
+.navbar .item:not(:last-child){
+    margin-right: 20px;
+}
+
+.navbar .nav-buttons.active{
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.main .top-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+.top-container .info-box{
+    max-width: 50%;
+    animation: toRight 0.8s;
+}
+
+.top-container .header{
+    margin: 0;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 55px;
+}
+
+.top-container .info-text{
+    margin: 20px 0 32px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.top-container .info-buttons{
+    display: flex;
+}
+
+.top-container .info-btn{
+    cursor: pointer;
+    padding: 8px 38px;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: -1px;
+    color: #fff;
+}
+
+.top-container .info-btn.nav-btn{
+    margin-left: 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
